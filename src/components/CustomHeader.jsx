@@ -64,12 +64,12 @@ const CustomHeader = () => {
 
         {/* CTA Buttons */}
         <div className="flex space-x-3 md:space-x-4">
-          <button className="px-5 py-2 md:px-6 md:py-3 bg-[#D4AF37] text-white font-semibold rounded-full shadow-md hover:bg-transparent border hover:border-[#2C3E50] transition">
+          <a href='#Contact' className="px-5 py-2 md:px-6 md:py-3 bg-[#D4AF37] text-white font-semibold rounded-full shadow-md hover:bg-transparent border hover:border-[#2C3E50] transition">
             Let's Talk
-          </button>
-          <button className="px-5 py-2 md:px-6 md:py-3 bg-transparent border border-white text-white font-semibold rounded-full shadow-md hover:bg-[#2C3E50] hover:text-white transition">
+          </a>
+          <a href='#Skills' className="px-5 py-2 md:px-6 md:py-3 bg-transparent border border-white text-white font-semibold rounded-full shadow-md hover:bg-[#2C3E50] hover:text-white transition">
             My Work
-          </button>
+          </a>
         </div>
       </div>
     </header>
