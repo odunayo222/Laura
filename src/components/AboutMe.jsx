@@ -47,9 +47,10 @@ const AboutMe = () => {
         <p className="text-lg text-gray-700 text-justify">
           Over the years, I've had the privilege of working with a diverse range of clients, each with their own set of goals and challenges. From optimizing portfolios to outperform benchmarks by 7% annually to increasing client satisfaction and retention by 25%, my approach is always centered on personal connection and strategic foresight.
         </p>
-        <button className="px-5 py-4 my-4 md:px-6 md:py-3 bg-[#D4AF37] text-[#2C3E50] font-semibold shadow-md hover:bg- border hover:border-[#2C3E50] transition">
+        <br />
+        <a href="/Laura_resume.pdf" download="/Laura_resume.pdf" className="px-5 py-4 my-7 md:px-6 md:py-3 bg-[#D4AF37] text-[#2C3E50] font-semibold shadow-md hover:bg- border hover:border-[#2C3E50] transition">
           Download Resume
-        </button>
+        </a>
       </div>
 
       {/* Right Section - Image */}
