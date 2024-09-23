@@ -73,7 +73,7 @@ const Education = () => {
             <p className="text-gray-600 dark:text-gray-300 py-2 font-semibold">
               <i>{edu.institution}</i>
             </p>
-            <p className="text-gray-500 dark:text-gray-400 text-justify">{edu.description}</p>
+            <p className="text-gray-500 dark:text-gray-400 md:text-justify text-pretty">{edu.description}</p>
           </div>
         ))}
       </div>
