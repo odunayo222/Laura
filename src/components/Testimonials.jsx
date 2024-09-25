@@ -142,56 +142,6 @@ const Testimonials = () => {
               Laura’s attention to detail and proactive management has given me confidence in my financial future. I highly recommend her services.
             </blockquote>
           </div>
-
-          {/* Video Testimonial Section with Two Videos */}
-          <div className="lg:col-span-2 mt-16 justify-center">
-            <h3 className="text-3xl font-semibold text-center text-gray-800 mb-4">Client Video Testimonials</h3>
-            <p className="text-lg text-center text-gray-600 mb-8">
-              Hear directly from our clients about their experiences working with Laura.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-              {/* Video 1 */}
-              <div className="max-w-full mx-auto">
-                <button
-                  className="w-full aspect-w-16 aspect-h-9 bg-gray-200 rounded-xl shadow-lg flex items-center justify-center"
-                  onClick={() => handleVideoClick(videoSrcs[0])}
-                >
-                  <span className="text-xl font-semibold text-gray-800">Play Video 1</span>
-                </button>
-                <div className="aspect-w-16 aspect-h-9 mt-4">
-                  <iframe
-                    className="rounded-xl shadow-lg w-full h-full"
-                    src={currentVideo === videoSrcs[0] ? videoSrcs[0] : ''}
-                    title="Client Video Testimonial 1"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-
-              {/* Video 2 */}
-              <div className="max-w-full mx-auto">
-                <button
-                  className="w-full aspect-w-16 aspect-h-9 bg-gray-200 rounded-xl shadow-lg flex items-center justify-center"
-                  onClick={() => handleVideoClick(videoSrcs[1])}
-                >
-                  <span className="text-xl font-semibold text-gray-800">Play Video 2</span>
-                </button>
-                <div className="aspect-w-16 aspect-h-9 mt-4">
-                  <iframe
-                    className="rounded-xl shadow-lg w-full h-full"
-                    src={currentVideo === videoSrcs[1] ? videoSrcs[1] : ''}
-                    title="Client Video Testimonial 2"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
