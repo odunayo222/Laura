@@ -37,7 +37,7 @@ export default function Navbar() {
                                 Laura
                             </a>
                             <div className="hidden sm:ml-6 sm:flex sm:items-center sm:justify-end flex-1 space-x-4" >
-                                <a href="#" className="hov rounded-md px-3 py-2 text-sm font-medium text-white border-gray-700 hover:text-white">Home</a>
+                                <a href="#header" className="hov rounded-md px-3 py-2 text-sm font-medium text-white border-gray-700 hover:text-white">Home</a>
                                 <a href="#About" className="hov rounded-md px-3 py-2 text-sm font-medium text-white border-gray-700 hover:text-white">About</a>
                                 <a href="#Experience" className="hov rounded-md px-3 py-2 text-sm font-medium text-white border-gray-700 hover:text-white">Experience</a>
                                 <a href="#Skills" className="hov rounded-md px-3 py-2 text-sm font-medium text-white border-gray-700 hover:text-white">Skills</a>
@@ -49,8 +49,7 @@ export default function Navbar() {
 
                 <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`} id="mobile-menu">
                     <div className="space-y-1 px-2 pb-3 pt-2">
-                        <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
-                        <a href="#Services" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Services</a>
+                        <a href="#header" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Home</a>
                         <a href="#About" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">About</a>
                         <a href="#Experience" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Experience</a>
                         <a href="#Contact" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Skills</a>
