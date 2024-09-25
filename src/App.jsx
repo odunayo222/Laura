@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Scroll from './components/Scroll'
+import Testimonials from './components/Testimonials';
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <Experience />
       <Education />
       <Skills />
+      <Testimonials />
       <Contact />
       <Scroll />
       <Footer />

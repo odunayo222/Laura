@@ -69,7 +69,7 @@ const Experience = () => {
     <div className="bg-gray-300 py-14 px-8" id="Experience">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <h2 className="text-3xl font-bold mb-4 text-center py-3 text-gray-900">
+        <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-center py-3 text-gray-900">
           Professional Experience Highlights
         </h2>
 

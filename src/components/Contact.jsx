@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <section id='Contact' className='bg-gray-900'>
   <div className="container mx-auto px-4 pb-12">
-    <h2 className="text-3xl font-semibold text-center mb-8 text-[#D4AF37] pt-10">Get in Touch</h2>
+    <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-8 text-[#D4AF37] pt-10">Get in Touch</h2>
     <p className="text-center text-white mb-12">
       Feel free to reach out if you have any questions or just want to connect.
     </p>

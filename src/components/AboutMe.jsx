@@ -37,10 +37,10 @@ const AboutMe = () => {
         }`}
       >
         <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">Who I am</p>
-        <h1 className="text-4xl font-bold mb-4 text-gray-900">
+        <h1 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
           About Me <span className="text-lg font-normal">(she/her)</span>
         </h1>
-        <p className="text-lg text-gray-700 md:text-justify">
+        <p className="text-lg text-gray-700 text-justify">
           Hi, I’m Laura Whitlock, a portfolio manager with over 10 years of experience helping clients achieve their financial goals. My passion for investment management goes beyond numbers—it's about understanding each client’s unique aspirations and crafting tailored solutions that deliver results. Whether it's managing portfolios with assets over $50M or transitioning to sustainable investments, I focus on strategies that not only grow wealth but also provide peace of mind.
         </p>
         <br />
