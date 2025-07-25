@@ -1,27 +1,33 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false); // new loading state
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true); // start loading
 
     emailjs
-      .sendForm('service_6p9tops', 'template_p85tpug', form.current, 'RqX2A1zEq6a7J7GZA')
+      .sendForm('service_mtlo7r4', 'template_p85tpug', form.current, 'RqX2A1zEq6a7J7GZA')
       .then(
         () => {
           toast.success('Your message has been sent!', {
             position: 'top-right',
+            autoClose: 3000,
           });
           e.target.reset();
+          setLoading(false); // stop loading
         },
         (error) => {
           toast.error(`Failed to send message: ${error.text}`, {
             position: 'top-right',
+            autoClose: 4000,
           });
+          setLoading(false); // stop loading even if error
         }
       );
   };
@@ -35,7 +41,6 @@ const Contact = () => {
         </p>
         <div className="max-w-lg mx-auto bg-white p-8 shadow-2xl rounded-lg">
           <form ref={form} onSubmit={sendEmail}>
-            {/* Name and Phone Number: side by side on medium and large screens, stacked on small screens */}
             <div className="mb-6 md:flex md:space-x-4">
               <div className="w-full mb-6 md:mb-0">
                 <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
@@ -110,15 +115,29 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[#D4AF37] text-white px-6 py-2 rounded-md hover:bg-gray-700 transition-colors"
+                disabled={loading}
+                className={`px-6 py-2 rounded-md text-white transition-colors ${
+                  loading
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-[#D4AF37] hover:bg-gray-700'
+                }`}
               >
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </div>
           </form>
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
     </section>
   );
 };
